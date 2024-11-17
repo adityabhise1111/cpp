@@ -1,24 +1,26 @@
 #include <iostream>
 
+using namespace std;
+
 void add(double a, double b) {
     cout << "Result: " << a + b << endl;
 }
-    std::cout << "Result: " << a + b << std::endl;
+
 void subtract(double a, double b) {
     cout << "Result: " << a - b << endl;
 }
-    std::cout << "Result: " << a - b << std::endl;
+
 void multiply(double a, double b) {
     cout << "Result: " << a * b << endl;
 }
-    std::cout << "Result: " << a * b << std::endl;
+
 void divide(double a, double b) {
     if (b != 0) {
         cout << "Result: " << a / b << endl;
     } else {
-        std::cout << "Result: " << a / b << std::endl;
+        cout << "Error: Division by zero!" << endl;
     }
-        std::cout << "Error: Division by zero!" << std::endl;
+}
 
 int main() {
     double num1, num2;
@@ -26,12 +28,12 @@ int main() {
 
     cout << "Enter first number: ";
     cin >> num1;
-    std::cout << "Enter first number: ";
-    std::cin >> num1;
-    std::cout << "Enter an operator (+, -, *, /): ";
-    std::cin >> operation;
-    std::cout << "Enter second number: ";
-    std::cin >> num2;
+    cout << "Enter an operator (+, -, *, /): ";
+    cin >> operation;
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    switch (operation) {
         case '+':
             add(num1, num2);
             break;
@@ -47,7 +49,7 @@ int main() {
         default:
             cout << "Error: Invalid operator!" << endl;
             break;
-            std::cout << "Error: Invalid operator!" << std::endl;
+    }
 
     return 0;
 }

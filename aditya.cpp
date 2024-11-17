@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    char op;
+    char op; 
     double num1, num2, result;
 
     std::cout << "Enter operator (+, -, *, /): ";

@@ -30,8 +30,38 @@ int main() {
     cout << sizeof(ptr)<<endl; 
     cout << sizeof(*ptr)<<endl;
     cout << sizeof(&ptr)<<endl;
-    */
     
-    cout << <<endl;
+    int a[10]={1,2,3,4,5,6,7,8,9,10};
+    int *p = a;
+    cout <<&a<<endl;
+    cout<<a<<endl;
+    cout<<p<<endl;
+    cout<<&p<<endl;
+    cout<<*p<<endl;
+    //symbol table is a table that stores the address of the variables
+    //symbol table contents cannot be changed
+    //pointer is a variable that stores the address of another variable
+    //a=a+1; //this is not possible
+    p=p+1; //this is possible
+    cout<<a<<endl;
+
+    //char array
+    char arr[6] = {'a', 'b', 'c', 'd', 'e'};
+    char arr1[6] = "abcde";//both are same
+    cout << arr1 << endl;
+    //when we print the char array it prints the whole array
+    // when we print number array it prints the address of the array
+    char *c = &arr[0];
+    cout << c << endl;
+    cout << &c<< endl;
+    
+    char temp='a';
+    char *ptr = &temp;
+    cout << ptr<<endl;
+    //prints the value of temp will not stopp untill it finds null
+
+    di
+    
+
     return 0;
 }

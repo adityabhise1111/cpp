@@ -60,7 +60,11 @@ int main() {
     cout << ptr<<endl;
     //prints the value of temp will not stopp untill it finds null
 
-    di
+    */
+   char ch [6]="hello";
+   char *ptr = "hello";//bad practice
+   cout << ch << endl;
+   cout << ptr << endl;
     
 
     return 0;

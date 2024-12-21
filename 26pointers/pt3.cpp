@@ -7,18 +7,17 @@ void print(int *p) {
 }
 
 void update(int *p){
-    p=p+1;
-    cout<<"inside"<<p<<endl;
+    *p = 10;
 }
 
 int main() {
     // Your code here
     int value = 5;
     int *p = &value;
-    cout <<"before"<<p<<endl;
+    cout <<"before"<<*p<<endl;
     update (p);
-    cout<<p<<endl;
-
+    cout << "after " << *p << endl;
+    print(p);
 
     return 0;
 }

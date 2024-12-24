@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int getmax(int a, int b){
+inline int getmax(int a, int b){
     return (a>b?a:b);
 }
 int main (){

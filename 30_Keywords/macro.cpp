@@ -7,6 +7,7 @@ int main() {
     cout << "Hello, World!" << endl;
     //macro value is replaced by the preprocessor before the code is compiled
     int area= PI*5*5;
+    cout << "Area of the circle is: " << area << endl;
     // before compilation, the above line will be replaced by 
     //int area= 3.14159*5*5;
     //will not store the value of PI in the memory

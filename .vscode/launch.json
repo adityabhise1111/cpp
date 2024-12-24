@@ -1,8 +1,6 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
-
         {
             "name": "Yeoman generator",
             "type": "node",
@@ -21,10 +19,10 @@
             "name": "Launch C++ Program",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/28ref/ref1", // Update this path to your executable
+            "program": "${workspaceFolder}/28ref/ref1",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/28ref", // Set the working directory to the folder containing ref1.cpp
+            "cwd": "${workspaceFolder}/28ref",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
@@ -38,6 +36,32 @@
             ],
             "preLaunchTask": "build",
             "internalConsoleOptions": "neverOpen"
+        },
+        {
+            "name": "C/C++: g++ build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: g++ build active file",
+            "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
 }

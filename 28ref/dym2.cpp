@@ -11,6 +11,9 @@ int main() {
     // while(1){
     //     int *a= new int;
     //     cout << &a << endl;
+    //     delete a;
+    // to free use delete keyword
+
     // }
     return 0;
 }

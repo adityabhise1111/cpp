@@ -16,8 +16,7 @@ int fibo(int n){
 
 int main(){
     int n;
-    cout<<"Enter the number of terms: ";
+    cout<<"Enter the position of the Fibonacci number: ";
     cin>>n;
-    cout<<fibo(n);
-
+    cout<<"The Fibonacci number at position "<<n<<" is "<<fibo(n-1)<<endl;
 }

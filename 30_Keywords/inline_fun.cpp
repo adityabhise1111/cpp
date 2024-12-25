@@ -16,6 +16,17 @@ int main (){
 
     a++, b--;
     cout<<getmax(a,b)<<endl; //inline function
+    //actually the inline function is a macro, 
+    //it replaces the function call with the function body
+    //just like a macro
+    //advantages of inline function:
+    //1. saves the overhead of function call
+    //2. saves the overhead of return statement
+    //3. saves the overhead of stack management
+    //4. saves the overhead of passing the arguments
+    //5. saves the overhead of creating a new stack frame
+    //6. saves the overhead of creating a new scope 
+
     return 0;
 
     

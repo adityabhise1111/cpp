@@ -21,5 +21,18 @@ int main() {
     //base case is the terminating condition
     //base case is mandatory in recursion
     //multiple functions calling each other is called mutual recursion
+
+    cout << "Recursion tree for fact(3):" << endl;
+    cout << "fact(3)" << endl;
+    cout << "  |" << endl;
+    cout << "  --> fact(2)" << endl;
+    cout << "        |" << endl;
+    cout << "        --> fact(1)" << endl;
+    cout << "              |" << endl;
+    cout << "              --> fact(0)" << endl;
+    cout << "              <-- return 1" << endl;
+    cout << "        <-- return 1 * 1 = 1" << endl;
+    cout << "  <-- return 2 * 1 = 2" << endl;
+    cout << "<-- return 3 * 2 = 6" << endl;
     return 0;
 }

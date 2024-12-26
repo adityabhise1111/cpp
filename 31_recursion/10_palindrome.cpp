@@ -2,7 +2,9 @@
 #include<string>
 using namespace std;
 
-is_palindrome(string)
+is_palindrome(string){
+    
+}
 
 int main(){
     string name;

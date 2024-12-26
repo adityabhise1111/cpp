@@ -17,4 +17,5 @@ int main() {
     cout << "The binary representation of " << n << " is " << binstr(n) << endl;
     cout << "Hello, World!" << endl;
     return 0;
+    
 }

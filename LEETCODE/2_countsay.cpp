@@ -1,15 +1,6 @@
 #include <iostream>
 
 using namespace std;
-string binstr(int n){
-    if(n==0){
-        return "0";
-    }
-    if(n==1){
-        return "1";
-    }
-    return binstr(n/2)+to_string(n%2);
-}
 string compress(string s){
     string ans ="";
     for(int i=0; i<s.size(); i++){
@@ -26,9 +17,14 @@ int main() {
     int n;
     cout<<"Enter a number: ";
     cin >>n;
-    string ans = binstr(n);
-    string compressed_str = compress(ans);
-    cout<<compressed_str<<endl;
+    int ans="1";
+    while(n){
+        compress(ans);
+        n--;
+    }
+    
+    
+    cout<<ans<<endl;
 
     return 0;
 }

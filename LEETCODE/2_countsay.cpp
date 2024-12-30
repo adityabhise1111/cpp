@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 string compress(string s){
     string ans ="";
@@ -22,9 +21,6 @@ int main() {
         compress(ans);
         n--;
     }
-    
-    
-    cout<<ans<<endl;
-
+    cout<<ans<<endl;  
     return 0;
 }

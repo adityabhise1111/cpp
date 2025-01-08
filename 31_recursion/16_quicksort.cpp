@@ -17,15 +17,17 @@ int partition(int arr[],int s,int e){
             i++;
         }
         while(arr[j]>pivot){
-            j++;
+            j--;
         }
+        if(i< pivotindex && j> pivotindex){
         swap(arr[i],arr[j]);
+        } 
     }
-    return pivot;
+    return pivotindex ;
 }
 
 void quicksort(int arr[], int s,int e){
-    if(s<=e)return;
+    if(s>=e)return;
 
     int p =partition(arr,s,e);
     quicksort(arr,s,p-1);

@@ -1,3 +1,5 @@
+#include <string>
+using namespace std;
 class Hero {
 private:
     string name;
@@ -5,6 +7,9 @@ private:
     int power;
 
 public:
+// Hero() {
+   
+// }//default constructore called automatically 
     string getname(){
         return name;
     }

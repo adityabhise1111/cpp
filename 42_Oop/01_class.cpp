@@ -3,11 +3,11 @@
 #include "hero.cpp"
 using namespace std;
 
-// class Hero {
-// private:
-//     string name;
-//     int health;
-//     int power;
+class Hero {
+private:
+    string name;
+    int health;
+    int power;
 
 // public:
 //     string getname(){
@@ -31,25 +31,31 @@ using namespace std;
 
 // };
 int main() {
-    Hero ironman;
-    ironman.sethealth(100);
-    ironman.setname("Tony Stark");
-    ironman.setpower(98);
+    // Hero ironman;
+    // ironman.sethealth(100);
+    // ironman.setname("Tony Stark");
+    // ironman.setpower(98);
 
-    cout << ironman.gethealth() << endl;
-    cout << ironman.getname() << endl;
-    cout << ironman.getpower() << endl;
+    // cout << ironman.gethealth() << endl;
+    // cout << ironman.getname() << endl;
+    // cout << ironman.getpower() << endl;
 
-    Hero* shaktiman = new Hero();
-    (*shaktiman).sethealth(120); //alternatively
-    shaktiman->setname("Shaktiman");
-    shaktiman->setpower(110);
+    // Hero* shaktiman = new Hero();
+    // (*shaktiman).sethealth(120);//dynamic
+    // shaktiman->setname("Shaktiman");//alternatively
+    // shaktiman->setpower(110);
 
-    cout << shaktiman->gethealth() << endl;
-    cout << shaktiman->getname() << endl;
-    cout << shaktiman->getpower() << endl;
+    // cout << shaktiman->gethealth() << endl;
+    // cout << shaktiman->getname() << endl;
+    // cout << shaktiman->getpower() << endl;
 
-    delete shaktiman;
+    // delete shaktiman;
+
     
+Hero manish(100);
+cout << manish.gethealth()<<endl;
+cout << &manish <<endl;
+Hero *kapil = new Hero(200); 
+cout << kapil->gethealth()<<endl;
     return 0;
 }

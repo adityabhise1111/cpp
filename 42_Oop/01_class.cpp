@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "hero.cpp"
+//#include "hero.cpp"
 using namespace std;
 
 class Hero {
@@ -9,27 +9,36 @@ private:
     int health;
     int power;
 
-// public:
-//     string getname(){
-//         return name;
-//     }
-//     int gethealth(){
-//         return health;
-//     }
-//     int getpower(){
-//         return power;
-//     }
-//     void setname(string s){
-//         name=s;
-//     }
-//     void sethealth(int h){
-//         health=h;
-//     }
-//     void setpower(int p){
-//         power=p;
-//     }
+public:
+    Hero(int h){
+        health =h;
+    }
+    Hero(const Hero &temp){
+        this->health = temp.health;
+        this->name = temp.name;
+        this->power = temp.power;
+    }
 
-// };
+    string getname(){
+        return name;
+    }
+    int gethealth(){
+        return health;
+    }
+    int getpower(){
+        return power;
+    }
+    void setname(string s){
+        name=s;
+    }
+    void sethealth(int h){
+        health=h;
+    }
+    void setpower(int p){
+        power=p;
+    }
+
+};
 int main() {
     // Hero ironman;
     // ironman.sethealth(100);
@@ -54,8 +63,16 @@ int main() {
     
 Hero manish(100);
 cout << manish.gethealth()<<endl;
-cout << &manish <<endl;
-Hero *kapil = new Hero(200); 
-cout << kapil->gethealth()<<endl;
+// cout << &manish <<endl;
+// Hero *kapil = new Hero(200); 
+// cout << kapil->gethealth()<<endl;
+
+//copy constructor
+Hero aditya(manish);
+cout<<aditya.gethealth()<<endl;
+//cout<<aditya.getpower()<<endl;
+
+
+//delete kapil;
     return 0;
 }

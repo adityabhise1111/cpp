@@ -46,7 +46,7 @@ int main() {
     cout<<*t<<endl;// output 4
     cout<<t<<endl;// output address of memory location
     t=t+1;// goes to next memory location like next number next character
-    cout<<t<<endl;// output address of next memory location
+    cout<<t<<endl;// 
     
     return 0;
 }

@@ -2,6 +2,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "half",
+            "request": "launch",
+            "mainClass": "half",
+            "projectName": "cpp_aff19881"
+        },
+        {
+            "type": "java",
+            "name": "Half",
+            "request": "launch",
+            "mainClass": "Half",
+            "projectName": "cpp_aff19881"
+        },
+        {
             "name": "Yeoman generator",
             "type": "node",
             "request": "launch",

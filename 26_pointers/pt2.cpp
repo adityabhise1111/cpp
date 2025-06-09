@@ -62,7 +62,7 @@ int main() {
 
     */
    char ch [6]="hello";
-   char *ptr = "hello";//bad practice
+   char *ptr = "hello";//bad practice 
    cout << ch << endl;
    cout << ptr << endl;
     
